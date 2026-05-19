@@ -1,0 +1,28 @@
+# Look-back window. Only entries published within this many hours are considered.
+look_back_hours: 24
+
+# How many entries to include in the final digest.
+top_n: 5
+
+# Output language for summaries. Use ISO 639-1 codes or natural names.
+# Examples: en, ru, de, es, fr, pt, ja, zh
+language: en
+
+# Anthropic model. Suggested:
+#   claude-haiku-4-5    — cheap and fast, ~$0.005/digest
+#   claude-sonnet-4-6   — better quality, ~$0.02/digest
+#   claude-opus-4-7     — best quality, ~$0.10/digest
+model: claude-haiku-4-5
+
+# Feeds to aggregate.
+feeds:
+  - https://news.ycombinator.com/rss
+  - https://www.theverge.com/rss/index.xml
+  - https://www.reuters.com/arc/outboundfeeds/v3/category/technology/?outputType=xml
+  # - https://habr.com/ru/rss/all/
+  # - https://www.bbc.com/news/world/rss.xml
+
+# Deduplication across feeds. Catches the same story posted in multiple sources.
+deduplication:
+  enabled: true
+  similarity_threshold: 0.85  # 0.0 = anything dedupe, 1.0 = exact match only

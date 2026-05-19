@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tg-news-digest"
+version = "0.1.0"
+description = "AI-powered news digest for Telegram. Fetches RSS, ranks + summarizes via Claude, posts to your chat on schedule."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "agentforge_ru", email = "agentforge-ru@users.noreply.github.com" }]
+requires-python = ">=3.10"
+dependencies = [
+    "anthropic>=0.40.0",
+    "feedparser>=6.0.10",
+    "httpx>=0.27.0",
+    "python-dotenv>=1.0.0",
+    "pyyaml>=6.0",
+]
+keywords = ["telegram", "bot", "ai", "claude", "rss", "news", "digest"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Communications :: Chat",
+]
+
+[project.urls]
+Homepage = "https://github.com/agentforge-ru/tg-news-digest-bot"
+Issues = "https://github.com/agentforge-ru/tg-news-digest-bot/issues"
+
+[project.scripts]
+tg-news-digest = "tg_news_digest.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
