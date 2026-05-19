@@ -4,6 +4,23 @@ A minimal **AI-powered news digest for Telegram** — pulls RSS feeds, asks Clau
 
 > Stop drowning in news. Run this on a cron — every morning you get the 3-5 stories that actually matter, summarized in 2 sentences each.
 
+---
+
+## 🇷🇺 На русском
+
+**Кому это подойдёт:**
+- У тебя **много источников новостей/каналов** и ты тонешь в потоке — хочешь утренний дайджест с топ-3-5 главного
+- Ты **контент-мейкер / эксперт** и хочешь автоматизировать reposting релевантного контента в свой Telegram-канал
+- Ты **HR / рекрутер / аналитик** и тебе нужен **AI-фильтр** для входящего потока (вакансий, новостей, лидов)
+
+**Что внутри:** Python-скрипт на ~600 строк (feeds + digest + telegram модули), интеграция с Anthropic Claude API, дедупликация дубликатов между источниками, готовый config с примерами фидов, docker-compose для деплоя в одну команду.
+
+**Reference implementation подойдёт как есть для:** AI-дайджестов новостей, фильтрации вакансий, мониторинга мнений в каналах.
+
+**Заказать кастомную версию** (под твой конкретный use case: парсер вакансий с HH, AI-ответы на типовые вопросы клиентов, мониторинг конкурентов и т.д.): [Kwork → agentforge_ru](https://kwork.ru/user/agentforge_ru) — от 2 500 ₽, сроки 48-96 часов.
+
+---
+
 ## What it does
 
 ```
