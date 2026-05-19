@@ -1,5 +1,9 @@
 # tg-news-digest
 
+[![CI](https://github.com/agentforge-ru/tg-news-digest-bot/actions/workflows/ci.yml/badge.svg)](https://github.com/agentforge-ru/tg-news-digest-bot/actions/workflows/ci.yml)
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
 A minimal **AI-powered news digest for Telegram** — pulls RSS feeds, asks Claude to rank and summarize the most important stories, posts a clean digest to your channel/chat on schedule.
 
 > Stop drowning in news. Run this on a cron — every morning you get the 3-5 stories that actually matter, summarized in 2 sentences each.
